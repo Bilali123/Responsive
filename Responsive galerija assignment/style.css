@@ -1,0 +1,48 @@
+body  {
+    margin: 0 50px;
+} 
+
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    gap: 20px;
+    width: 100%;
+}
+.grid-item{
+    display: inline-block;
+    
+}
+.grid-item > div{
+    display: inline-block;
+    width: 100%;
+    background-color: gainsboro; 
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border-radius: 0 0 8px 8px;
+    
+      
+}
+
+.grid-image{
+    width: 100%;
+    background-color: blue;
+    border-radius: 8px 8px 0 0;
+}
+
+
+@media  only screen and (min-width:600px) {
+    .grid{
+        grid-template-columns: repeat(3, auto);
+        margin-bottom: 20px;
+    }
+
+}
+@media  only screen and (min-width: 768px) {
+    .grid{
+        grid-template-columns: repeat(5, auto);
+        margin-bottom: 20px;
+    }
+
+}
